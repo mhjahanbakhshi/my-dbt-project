@@ -1,4 +1,8 @@
+-- models/staging/source_data.sql
+
 with source_data as (
-    select * from `onlinestore-402608.ga_my_action_types.my_action_types`
+    SELECT * 
+    FROM `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`
+    LIMIT 10
 )
 select * from source_data
